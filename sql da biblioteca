@@ -1,0 +1,46 @@
+/*create table livros(
+id int primary key auto_increment,
+título varchar(80) not null,
+categoria varchar(50) not null,
+disponibilidade boolean not null
+);*/
+/*
+create table membros(
+id int primary key auto_increment,
+nome varchar(100) not null,
+cpf varchar(14) not null,
+telefone varchar(20),
+email varchar(150)
+);*/
+
+
+/*CREATE TABLE emprestimos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_livro INT NOT NULL,
+    FOREIGN KEY (id_livro) REFERENCES livros(id),
+    id_membro INT NOT NULL,
+    FOREIGN KEY (id_membro) REFERENCES membros(id),
+    data_emprestimo DATE NOT NULL,
+    data_devolucao DATE NOT NULL, 
+    status_livro ENUM('disponivel', 'emprestado', 'reservado') NOT NULL
+);*/
+
+/*create table funcionarios(
+id int primary key auto_increment,
+nome varchar(150) not null,
+cargo varchar(100) not null,
+login varchar(250) not null,
+senha varchar(250) not null
+); */
+USE biblioteca;
+/*create table historico_de_emprestimos(
+id int primary key auto_increment,
+id_membro int not null,
+foreign key (id_membro) references membros(id),
+id_livro int not null,
+foreign key (id_livro) references livros(id),
+data_acao date not null
+
+);*/
+
+
